@@ -1,0 +1,5 @@
+{
+    "require": {
+        "boxybird/inertia-wordpress": "^0.5.6"
+    }
+}

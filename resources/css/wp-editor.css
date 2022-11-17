@@ -1,0 +1,23 @@
+@import "typografi.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+body {
+    @apply transition-all px-5 pt-1;
+}
+
+
+.paragraph-xl {
+    @apply text-2xl;
+}
+.paragraph-lg {
+    @apply text-xl;
+}
+.paragraph-sm {
+    @apply text-base;
+}
+
+

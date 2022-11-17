@@ -1,0 +1,42 @@
+@layer components {
+
+    /* rules that target nested elements */
+    .nested-enter-active .inner,
+    .nested-leave-active .inner {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nested-enter-from .inner,
+    .nested-leave-to .inner {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    /* delay enter of nested element for staggered effect */
+    .nested-enter-active .inner {
+        transition-delay: 0.25s;
+    }
+
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: opacity 0.5s ease;
+    }
+
+    .fade-enter-from,
+    .fade-leave-to {
+        opacity: 0;
+    }
+
+    .list-enter-active,
+    .list-leave-active {
+        transition: all 0.5s ease;
+    }
+
+    .list-enter-from,
+    .list-leave-to {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+
+}

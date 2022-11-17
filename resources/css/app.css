@@ -1,0 +1,28 @@
+@import "buttons.css";
+@import "inputs.css";
+@import "typografi.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* WP Blocks */
+.wp-block-cover {
+    border-radius: 0.25rem;
+}
+
+@layer base {
+    html, body {
+        @apply font-body;
+    }
+}
+
+body.disable-v-scroll {
+    overflow: hidden;
+}
+
+/* Section Wrapper */
+.section-wrapper{
+    @apply w-full py-4;
+}

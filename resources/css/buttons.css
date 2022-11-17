@@ -1,0 +1,28 @@
+@layer components {
+    .btn{
+        @apply py-3 px-6 border border-transparent;
+        &.btn-primary {
+            @apply bg-primary text-white;
+        }
+        &.btn-primary:hover {
+            @apply bg-transparent text-primary border border-primary;
+        }
+        &.btn-secondary {
+            @apply bg-transparent border-primary text-primary;
+        }
+        &.btn-secondary:hover {
+            @apply bg-primary border-transparent text-white;
+        }
+        &.btn-tree {
+            @apply bg-transparent border-white text-white;
+        }
+    }
+
+    .chs {
+        @apply py-2 px-6 text-sm rounded-full w-min;
+        &.chs-primary {
+            @apply text-primary bg-primary-light;
+        }
+    }
+
+}
